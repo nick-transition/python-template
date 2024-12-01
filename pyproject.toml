@@ -23,7 +23,7 @@ include = '\.pyi?$'
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.1.0"
+version = "0.0.0"
 tag_format = "v$version"
 
 
@@ -37,7 +37,8 @@ format_check = "black . --check"
 lint = "flake8 ."
 ci_check = ["format_check", "lint", "test"]
 commit = "cz commit"
-version = "cz bump"
+version_bump = "cz bump --changelog"
+version_check = "cz bump --dry-run"
 
 [build-system]
 requires = ["poetry-core"]
