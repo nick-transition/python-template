@@ -20,6 +20,11 @@ poethepoet = "^0.20.0"
 line-length = 88
 target-version = ['py38']
 include = '\.pyi?$'
+extend-exclude = '''
+# A regex preceded with ^/ will apply only to files and directories
+# in the root of the project.
+^/venv/
+'''
 
 [tool.commitizen]
 name = "cz_conventional_commits"
@@ -34,7 +39,7 @@ poetry_command = ""
 test = "pytest tests/ -v"
 format = "black ."
 format_check = "black . --check"
-lint = "flake8 ."
+lint = "flake8 src/"
 ci_check = ["format_check", "lint", "test"]
 commit = "cz commit"
 version_bump = "cz bump --changelog"
