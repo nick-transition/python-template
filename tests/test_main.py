@@ -8,4 +8,4 @@ def test_greet_default():
 
 def test_greet_custom():
     """Test a custom greeting."""
-    assert greet("Poe") == "Hello, Poe!" 
+    assert greet("Poe") == "Hello, Poe!"

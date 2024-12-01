@@ -24,6 +24,9 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: true
 
+      - name: Install Poetry plugins
+        run: poetry self add "poethepoet[poetry_plugin]"
+
       - name: Load cached venv
         id: cached-poetry-dependencies
         uses: actions/cache@v3
@@ -39,4 +42,4 @@ jobs:
         run: poetry install --no-interaction
 
       - name: Run checks
-        run: poetry poe check 
+        run: poetry ci_check 

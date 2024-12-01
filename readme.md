@@ -45,4 +45,10 @@ Verify the installation:
 poetry --version
 ```
 
+### 4. Install Poethepoet
+
+```bash
+poetry self add poetry-plugin-poethepoet
+```
+
 
