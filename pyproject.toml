@@ -17,7 +17,7 @@ flake8 = "^6.0.0"
 poethepoet = "^0.20.0"
 
 [tool.black]
-line-length = 120
+line-length = "120"
 target-version = ['py38']
 include = '\.pyi?$'
 extend-exclude = '''
@@ -28,7 +28,7 @@ extend-exclude = '''
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.1.0"
+version = "0.2.0"
 tag_format = "v$version"
 
 
