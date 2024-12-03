@@ -17,7 +17,7 @@ flake8 = "^6.0.0"
 poethepoet = "^0.20.0"
 
 [tool.black]
-line-length = 88
+line-length = 120
 target-version = ['py38']
 include = '\.pyi?$'
 extend-exclude = '''
